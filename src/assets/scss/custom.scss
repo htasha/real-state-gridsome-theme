@@ -1,0 +1,8 @@
+$theme-colors: (
+  "custom-color": #F7F7F7
+);
+$enable-shadows: true;
+
+// Include Bootstrap and BootstrapVue SCSS files
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
