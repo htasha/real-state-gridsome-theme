@@ -5,16 +5,20 @@
         <g-image
           src="~/assets/images/apartamento-1-camas-1.jpg"
           quality="100"
-          class="carousel__image"
+          class="carousel__image w-100 h-100"
         ></g-image>
       </template>
-      <div class="carousel__caption d-flex justify-content-end text-left">
-        <properties-features class="mw-500 flex-grow-1 text-dark">
+      <div class="d-flex justify-content-end text-left">
+        <b-card class="caption__card" no-body>
           <b-card-body body-class="p-3">
-            <b-card-title class="text-dark">Apartamento sector Los Laureles</b-card-title>
+            <b-card-title class="text-dark" title-tag="h5">Apartamento sector Los Laureles</b-card-title>
             <b-card-sub-title>Merrick Way, Miami, FL 33134, USA</b-card-sub-title>
           </b-card-body>
-        </properties-features>
+          <b-card-body body-class="text-dark pt-0 px-3 pb-2">
+            <h6 class="font-weight-normal">Renta</h6>
+            <h5 class="text-primary">$ 100,000 / mes</h5>
+          </b-card-body>
+        </b-card>
       </div>
     </b-carousel-slide>
   </b-carousel>
@@ -35,8 +39,9 @@ export default {
 <style>
 .carousel__image {
   object-fit: cover;
-  height: 100%;
-  width: 100%;
+}
+.caption__card {
+  width: 350px;
 }
 </style>
 

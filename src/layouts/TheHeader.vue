@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="sm" fixed="top" type="dark" class="navbar--shadow">
+  <b-navbar toggleable="sm" fixed="top" type="dark" variant="primary">
     <b-container>
       <b-navbar-brand>
         <g-link to="/">Logo.</g-link>

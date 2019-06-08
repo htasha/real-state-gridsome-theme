@@ -1,51 +1,61 @@
 <template>
   <b-card no-body>
     <slot></slot>
-    <b-card-body body-class="d-none d-sm-block pt-0 px-3 pb-2">
-      <b-row>
-        <b-col class="mb-3">
-          <div class="py-1">Estrato</div>
-          <div class="d-flex align-items-center">
-            <font-awesome icon="crown" size="lg" pull="left"></font-awesome>
-            <strong>5</strong>
+    <b-list-group class="border-top border-bottom">
+      <b-list-group-item class="border-0 d-flex align-items-center justify-content-between" button>
+        <div class="properties-list__item d-flex align-items-center">
+          <div class="properties-list__icon mr-3">
+            <font-awesome icon="crown" class="text--small text-gray-light"></font-awesome>
           </div>
-        </b-col>
-        <b-col>
-          <div class="py-1">Habitaciones</div>
-          <div class="d-flex align-items-center">
-            <font-awesome icon="bed" size="lg" pull="left"></font-awesome>
-            <strong>1</strong>
+          <h6 class="mb-0 font-weight-normal">Estrato</h6>
+        </div>
+        <h6 class="mb-0 font-weight-normal">5</h6>
+      </b-list-group-item>
+      <b-list-group-item class="border-0 d-flex align-items-center justify-content-between" button>
+        <div class="properties-list__item d-flex align-items-center">
+          <div class="properties-list__icon mr-3">
+            <font-awesome icon="bed" class="text--small text-gray-light"></font-awesome>
           </div>
-        </b-col>
-        <b-col>
-          <div class="py-1">Baños</div>
-          <div class="d-flex align-items-center">
-            <font-awesome icon="bath" size="lg" pull="left"></font-awesome>
-            <strong>2</strong>
+          <h6 class="mb-0 font-weight-normal">Habitaciones</h6>
+        </div>
+        <h6 class="mb-0 font-weight-normal">2</h6>
+      </b-list-group-item>
+      <b-list-group-item class="border-0 d-flex align-items-center justify-content-between" button>
+        <div class="properties-list__item d-flex align-items-center">
+          <div class="properties-list__icon mr-3">
+            <font-awesome icon="bath" class="text--small text-gray-light"></font-awesome>
           </div>
-        </b-col>
-        <b-col>
-          <div class="py-1">Área</div>
-          <div class="d-flex align-items-center">
-            <font-awesome icon="vector-square" size="lg" pull="left"></font-awesome>
-            <strong>40</strong> ㎡
+          <h6 class="mb-0 font-weight-normal">Baños</h6>
+        </div>
+        <h6 class="mb-0 font-weight-normal">1</h6>
+      </b-list-group-item>
+      <b-list-group-item class="border-0 d-flex align-items-center justify-content-between" button>
+        <div class="properties-list__item d-flex align-items-center">
+          <div class="properties-list__icon mr-3">
+            <font-awesome icon="vector-square" class="text--small text-gray-light"></font-awesome>
           </div>
-        </b-col>
-      </b-row>
-    </b-card-body>
-    <b-card-body body-class="px-3 pt-0 pb-3">
-      <b-row>
-        <b-col>
-          <div class="py-1">Renta</div>
-          <h3>$ 100,000 / mes</h3>
-        </b-col>
-      </b-row>
-    </b-card-body>
+          <h6 class="mb-0 font-weight-normal">Área</h6>
+        </div>
+        <h6 class="mb-0 font-weight-normal">40 m2</h6>
+      </b-list-group-item>
+    </b-list-group>
+    <b-list-group-item class="border-0">
+      <h6 class="font-weight-normal">Renta</h6>
+      <h5 class="text-primary">$ 100,000 / mes</h5>
+    </b-list-group-item>
   </b-card>
 </template>
 
 <script>
 export default {
-  props: {}
+  name: "PropertiesFeatures"
 };
 </script>
+
+<style>
+.properties-list__icon {
+  width: 24px;
+  height: 24px;
+}
+</style>
+
