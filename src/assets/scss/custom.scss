@@ -1,7 +1,9 @@
 $theme-colors: (
-  "custom-color": #F7F7F7
+  "primary": #4db6ac,
+  "gray-light": #adb5bd
 );
 $enable-shadows: true;
+$h6-font-size: 14px;
 
 // Include Bootstrap and BootstrapVue SCSS files
 @import '~bootstrap/scss/bootstrap.scss';
