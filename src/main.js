@@ -1,16 +1,17 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-import { BContainer, BRow, BCol, BCard, BCardText, BCardBody, BCardTitle, BCardSubTitle, BCardFooter } from 'bootstrap-vue';
+import { BContainer, BRow, BCol, BCard, BCardText, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, ListGroupPlugin } from 'bootstrap-vue';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import '~/assets/scss/custom.scss';
 import '~/assets/css/style.css';
 
 import TheHeader from '~/layouts/TheHeader.vue'
-import PropertiesFeatures from '~/components/PropertiesFeatures.vue'
+import TheGrid from '~/layouts/TheGrid.vue'
 
 export default function (Vue, { router, head, isClient }) {
+  Vue.use(ListGroupPlugin);
   // Set default layout as a global component
   Vue.component('BContainer', BContainer);
   Vue.component('BRow', BRow);
@@ -23,5 +24,5 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('BCardFooter', BCardFooter);
 
   Vue.component('TheHeader', TheHeader)
-  Vue.component('PropertiesFeatures', PropertiesFeatures)
+  Vue.component('TheGrid', TheGrid)
 }
