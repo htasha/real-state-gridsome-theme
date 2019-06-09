@@ -25,7 +25,7 @@
           </b-card-body>
           <b-card-body body-class="text-dark pt-0 px-3 pb-2">
             <h6 class="font-weight-normal">Renta</h6>
-            <h5 class="text-primary">$100,000 / mes</h5>
+            <h5 class="text-primary">$ 100,000 / mes</h5>
           </b-card-body>
         </b-card>
       </div>
