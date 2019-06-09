@@ -2,17 +2,18 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import { BContainer, BRow, BCol, BCard, BCardText, BCardBody, BCardTitle, BCardSubTitle, BCardFooter, ListGroupPlugin } from 'bootstrap-vue';
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 import '~/assets/scss/custom.scss';
 import '~/assets/css/style.css';
 
-import TheHeader from '~/layouts/TheHeader.vue'
-import TheGrid from '~/layouts/TheGrid.vue'
+import TheHeader from '~/layouts/TheHeader.vue';
+import TheGrid from '~/layouts/TheGrid.vue';
+import TheFreakingFooter from '~/layouts/TheFreakingFooter.vue';
 
 export default function (Vue, { router, head, isClient }) {
+  // Framework components
   Vue.use(ListGroupPlugin);
-  // Set default layout as a global component
   Vue.component('BContainer', BContainer);
   Vue.component('BRow', BRow);
   Vue.component('BCol', BCol);
@@ -22,7 +23,8 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('BCardTitle', BCardTitle);
   Vue.component('BCardSubTitle', BCardSubTitle);
   Vue.component('BCardFooter', BCardFooter);
-
-  Vue.component('TheHeader', TheHeader)
-  Vue.component('TheGrid', TheGrid)
+  // In house components
+  Vue.component('TheHeader', TheHeader);
+  Vue.component('TheGrid', TheGrid);
+  Vue.component('TheFreakingFooter', TheFreakingFooter);
 }
