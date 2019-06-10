@@ -69,8 +69,9 @@ export default {
       try {
         if (this.currentPage === this.totalPages) return;
         let results = await this.$fetch(`/${++this.currentPage}`);
+        console.log(results.data.allProperties.edges[0].node.featuredImage);
         if (results.data.allProperties.edges[0].node.featuredImage === null) {
-          results = await this.$fetch(`/${this.currentPage--}`);
+          results = await this.$fetch(`/${this.currentPage - 1}`);
         }
         console.log(results);
         this.nodes.push(results.data.allProperties.edges[0]);
