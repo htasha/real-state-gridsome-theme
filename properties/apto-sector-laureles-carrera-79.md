@@ -21,8 +21,8 @@ propertyImages:
   altText: Habitación con 1 closet
 - image: ../src/assets/images/apartamento-1-sala.jpg
   altText: Sala de apartamento
-featured: true
-featuredImage: ../src/assets/images/apartamento-1-camas-1.jpg
+featured: false
+featuredImage: ../src/assets/images/apartamento-1-sala.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-carrera-79-calle-34a
 ---
