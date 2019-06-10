@@ -71,8 +71,7 @@ export default {
         let results = await this.$fetch(`/${++this.currentPage}`);
         console.log(results.data.allProperties.edges[0].node.featuredImage);
         if (results.data.allProperties.edges[0].node.featuredImage === null) {
-          this.currentPage--;
-          results = await this.$fetch(`/${this.currentPage}`);
+          results = await this.$fetch(`/${this.currentPage--}`);
         }
         console.log(results);
         this.nodes.push(results.data.allProperties.edges[0]);
