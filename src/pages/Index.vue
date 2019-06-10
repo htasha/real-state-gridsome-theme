@@ -68,7 +68,10 @@ export default {
     async loadMore() {
       try {
         if (this.currentPage === this.totalPages) return;
-        const results = await this.$fetch(`/${++this.currentPage}`);
+        let results = await this.$fetch(`/${++this.currentPage}`);
+        if (results.data.allProperties.edges[0].node.featuredImage === null) {
+          results = await this.$fetch(`/${this.currentPage--}`);
+        }
         console.log(results);
         this.nodes.push(results.data.allProperties.edges[0]);
       } catch (error) {
