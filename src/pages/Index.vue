@@ -69,6 +69,7 @@ export default {
       try {
         if (this.currentPage === this.totalPages) return;
         const results = await this.$fetch(`/${++this.currentPage}`);
+        console.log(results);
         this.nodes.push(results.data.allProperties.edges[0]);
       } catch (error) {
         console.log(error);
