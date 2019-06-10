@@ -22,7 +22,7 @@ propertyImages:
 - image: ../src/assets/images/apartamento-1-sala.jpg
   altText: Sala de apartamento
 featured: false
-featuredImage: ../src/assets/images/test-file.jpg
+featuredImage: ../src/assets/images/apartamento-1-camas-2.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-carrera-79-calle-34a
 ---
