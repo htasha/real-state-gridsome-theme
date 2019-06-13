@@ -12,7 +12,7 @@
         <b-dropdown-divider></b-dropdown-divider>
         <b-nav-text>
           <font-awesome icon="phone" flip="horizontal" pull="left" size="lg"></font-awesome>
-          <b-link href="tel:18005551234">1-800-555-1234</b-link>
+          <b-link href="tel:18005551234" class="text-decoration-none">1-800-555-1234</b-link>
         </b-nav-text>
       </b-navbar-nav>
     </b-collapse>
