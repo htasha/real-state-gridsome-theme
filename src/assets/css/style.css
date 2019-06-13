@@ -1,3 +1,9 @@
 .text--small {
     font-size: 18px;
 }
+.w-48 {
+    width: 48px;
+}
+.h-48 {
+    height: 48px;
+}
