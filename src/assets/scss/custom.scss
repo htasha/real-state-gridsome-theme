@@ -4,6 +4,7 @@ $theme-colors: (
 );
 $enable-shadows: true;
 $h6-font-size: 14px;
+$enable-responsive-font-sizes: true;
 
 // Include Bootstrap and BootstrapVue SCSS files
 @import '~bootstrap/scss/bootstrap.scss';
