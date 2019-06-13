@@ -3,8 +3,10 @@
     <the-header></the-header>
     <featured-apartments-carousel :featured-properties="$page.featuredProperties.edges"></featured-apartments-carousel>
     <properties-feature-cards></properties-feature-cards>
-    <properties-grid-layout :all-properties="nodes"></properties-grid-layout>
-    <b-button variant="primary" @click="loadMore">Cargar más</b-button>
+    <properties-grid-layout
+      :all-properties="this.$page.allProperties.edges"
+      :page-info="this.$page.allProperties.pageInfo"
+    ></properties-grid-layout>
     <the-freaking-footer></the-freaking-footer>
   </div>
 </template>
@@ -23,7 +25,7 @@ query AllProperties ($page: Int) {
       }
     }
   }
-  allProperties: allProperty (perPage: 1, page: $page) @paginate {
+  allProperties: allProperty (perPage: 6, page: $page) @paginate {
     pageInfo {
       currentPage
       totalPages
@@ -52,36 +54,13 @@ import PropertiesGridLayout from "~/components/PropertiesGridLayout";
 import PropertiesFeatureCards from "~/components/PropertiesFeatureCards.vue";
 export default {
   name: "IndexPage",
-  data() {
-    return {
-      totalPages: 0,
-      currentPage: 0,
-      nodes: []
-    };
-  },
   components: {
     FeaturedApartmentsCarousel,
     PropertiesGridLayout,
     PropertiesFeatureCards
   },
-  methods: {
-    async loadMore() {
-      try {
-        if (this.currentPage === this.totalPages) return;
-        let results = await this.$fetch(`/${++this.currentPage}`);
-        this.nodes.push(results.data.allProperties.edges[0]);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  },
   metaInfo: {
     title: "Some fancy brand name"
-  },
-  mounted() {
-    this.nodes.push(this.$page.allProperties.edges[0]);
-    this.totalPages = this.$page.allProperties.pageInfo.totalPages;
-    this.currentPage = this.$page.allProperties.pageInfo.currentPage;
   }
 };
 </script>
