@@ -11,6 +11,7 @@
           v-for="{ node: { id, path, featuredImage, featuredImageAltText, title, address, stratum, bedrooms, bathrooms, area } } in nodes"
           :key="id"
           no-body
+          class="rounded-lg"
         >
           <g-link :to="path">
             <g-image class="card-img" :src="featuredImage" :alt="featuredImageAltText"></g-image>

@@ -6,7 +6,7 @@
       </section>
       <section class="footer__cta container">
         <h1 class="text-white mw-75 mb-3">Quieres empezar a construir tu sueño de apartamento?</h1>
-        <b-button class="text-uppercase" variant="primary" size="lg">llamar 347 927-5487</b-button>
+        <b-button class="text-uppercase" variant="primary">llamar 347 927-5487</b-button>
       </section>
       <b-container>
         <b-row class="pb-4 py-5">
