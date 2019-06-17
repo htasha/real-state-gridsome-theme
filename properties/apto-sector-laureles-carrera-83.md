@@ -13,14 +13,10 @@ wifi: true
 tv: true
 tvType: Smart TV
 propertyImages:
-- image: ./apartamento-1-camas-1.jpg
+- image: ../src/assets/images/drawing-room.jpg
   altText: Habitación con 1 cama
-- image: ../src/assets/images/apartamento-1-camas-2.jpg
+- image: ../src/assets/images/kitchen.jpg
   altText: Habitación con 2 camas
-- image: ../src/assets/images/apartamento-1-closet.jpg
-  altText: Habitación con 1 closet
-- image: ../src/assets/images/apartamento-1-sala.jpg
-  altText: Sala de apartamento
 featured: true
 featuredImage: ../src/assets/images/apartamento-2-sala.jpg
 featuredImageAltText: Habitación con 1 cama
