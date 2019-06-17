@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import { BCarousel, BCarouselSlide, BCard, BCardText } from "bootstrap-vue";
+import { BCard, BCardText } from "bootstrap-vue";
 export default {
   props: {
     featuredProperties: {
@@ -43,8 +43,6 @@ export default {
     }
   },
   components: {
-    BCarousel,
-    BCarouselSlide,
     BCard,
     BCardText
   }
