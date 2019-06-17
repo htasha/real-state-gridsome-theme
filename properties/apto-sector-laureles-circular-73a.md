@@ -18,7 +18,7 @@ propertyImages:
 - image: ../src/assets/images/property-01-exterior.jpg
   altText: Habitación con 2 camas
 featured: true
-featuredImage: ../src/assets/images/apartamento-3-sala.jpg
+featuredImage: ../src/assets/images/luxury-bedroom.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-circular-73a-calle-35
 ---

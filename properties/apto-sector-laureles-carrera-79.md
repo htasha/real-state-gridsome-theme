@@ -18,7 +18,7 @@ propertyImages:
 - image: ../src/assets/images/kitchen.jpg
   altText: Habitación con 2 camas
 featured: false
-featuredImage: ../src/assets/images/apartamento-1-camas-2.jpg
+featuredImage: ../src/assets/images/drawing-room.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-carrera-79-calle-34a
 ---

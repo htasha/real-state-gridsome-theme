@@ -18,7 +18,7 @@ propertyImages:
 - image: ../src/assets/images/kitchen.jpg
   altText: Habitación con 2 camas
 featured: true
-featuredImage: ../src/assets/images/apartamento-2-sala.jpg
+featuredImage: ../src/assets/images/kitchen.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-carrera-83-calle-33e
 ---
