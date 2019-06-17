@@ -1,2 +1,13 @@
 backend:
   name: git-gateway
+
+# This line should *not* be indented
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+
+collections: 
+  - name: apartamentos-construsuenos
+    label: "Apartamentos Construsueños"
+    folder: "properties/"
+    slug: "{{slug}}"
+    fields: 
+      - {label: "Titulo", name: "title", widget: "string"}
