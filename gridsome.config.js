@@ -14,6 +14,9 @@ module.exports = {
         typeName: 'Property',
         route: '/apartamento/:slug',
       }
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`,
     }
   ]
 }
