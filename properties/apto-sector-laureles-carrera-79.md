@@ -13,7 +13,7 @@ wifi: true
 tv: true
 tvType: Smart TV
 propertyImages:
-- image: ../src/assets/images/apartamento-1-camas-1.jpg
+- image: ./apartamento-1-camas-1.jpg
   altText: Habitación con 1 cama
 - image: ../src/assets/images/apartamento-1-camas-2.jpg
   altText: Habitación con 2 camas
