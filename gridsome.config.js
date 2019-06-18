@@ -13,7 +13,6 @@ module.exports = {
         path: 'properties/*.md',
         typeName: 'Property',
         route: '/apartamento/:slug',
-        resolveAbsolutePaths: true
       }
     },
     {
