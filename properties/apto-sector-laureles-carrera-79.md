@@ -13,12 +13,12 @@ wifi: true
 tv: true
 tvType: Smart TV
 propertyImages:
-- image: ../uploads/drawing-room.jpg
+- image: ../static/uploads/drawing-room.jpg
   altText: Habitación con 1 cama
-- image: ../uploads/kitchen.jpg
+- image: ../static/uploads/kitchen.jpg
   altText: Habitación con 2 camas
 featured: true
-featuredImage: ../uploads/drawing-room.jpg
+featuredImage: ../static/uploads/drawing-room.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-carrera-79-calle-11
 ---
