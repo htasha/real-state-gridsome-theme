@@ -24,6 +24,6 @@ collections:
       - {label: "TV", name: "tv", widget: "boolean", hint: "Tiene TV?"}
       - {label: "Destacado", name: "featured", widget: "boolean", default: true}
       - {label: "Image destacada", name: "featuredImage", widget: "image"}
-      - {label: "Texto alternativo de la imagen destacada", name: "featuredImageAltText", widget: "image"}
+      - {label: "Texto alternativo de la imagen destacada", name: "featuredImageAltText", widget: "string"}
       - {label: "URL", name: "slug", widget: "string", hint: "URL del link, p.ej. apto-sector-laureles-carrera-14-calle-12"}
 
