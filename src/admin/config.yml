@@ -11,3 +11,28 @@ collections:
     slug: "{{slug}}"
     fields: 
       - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Descripcion", name: "description", widget: "string"}
+      - {label: "Direcion", name: "address", widget: "string"}
+      - {label: "Area", name: "area", widget: "number", hint: "Solo los metros, p.ej. 70"}
+      - {label: "Estrato", name: "stratum", widget: "number", hint: "Del 1 al 5, p.ej. 3"}
+      - {label: "Habitaciones", name: "bedrooms", widget: "number", hint: "Numero de habitaciones del apto"}
+      - {label: "Camas", name: "bedrooms", widget: "number", hint: "Numero de camas del apto"}
+      - {label: "Baños", name: "bathrooms", widget: "number", hint: "Numero de baños del apto"}
+      - {label: "Cocinas", name: "kitchen", widget: "number", hint: "Numero de cocinas del apto"}
+      - {label: "Cocina amoblada", name: "kitchenFurnished", widget: "boolean", hint: "Esta la cocina amoblada?", default: false}
+      - {label: "WiFi", name: "wifi", widget: "boolean", hint: "Tiene WiFi?"}
+      - {label: "TV", name: "tv", widget: "boolean", hint: "Tiene TV?"}
+      - label: "Fotos del apartamento"
+        name: "propertyImages"
+        widget: "object"
+        fields:
+        - name: "image"
+          widget: "image"
+          media_library:
+           config:
+            multiple: true
+      - {label: "Destacado", name: "featured", widget: "boolean", default: true}
+      - {label: "Image destacada", name: "featuredImage", widget: "image"}
+      - {label: "Texto alternativo de la imagen destacada", name: "featuredImageAltText", widget: "image"}
+      - {label: "URL", name: "slug", widget: "string", hint: "URL del link, p.ej. apto-sector-laureles-carrera-14-calle-12"}
+
