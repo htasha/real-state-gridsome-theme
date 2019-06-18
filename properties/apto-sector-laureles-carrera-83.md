@@ -13,7 +13,7 @@ wifi: true
 tv: true
 tvType: Smart TV
 propertyImages:
-- image: ./images/luxury-bedroom.jpg
+- image: ./images/apartamento-1-camas-2.jpg
   altText: Habitación con 1 cama
 - image: ./images/property-01-exterior.jpg
   altText: Habitación con 2 camas
