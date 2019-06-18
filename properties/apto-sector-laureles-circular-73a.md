@@ -13,12 +13,12 @@ wifi: true
 tv: true
 tvType: Smart TV
 propertyImages:
-- image: ../src/assets/images/luxury-bedroom.jpg
+- image: ../images/uploads/luxury-bedroom.jpg
   altText: Habitación con 1 cama
-- image: ../src/assets/images/property-01-exterior.jpg
+- image: ../images/uploads/property-01-exterior.jpg
   altText: Habitación con 2 camas
 featured: true
-featuredImage: ../src/assets/images/luxury-bedroom.jpg
+featuredImage: ../images/uploads/property-01-exterior.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-circular-73a-calle-35
 ---
