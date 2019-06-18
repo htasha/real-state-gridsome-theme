@@ -13,12 +13,12 @@ wifi: true
 tv: true
 tvType: Smart TV
 propertyImages:
-- image: ../static/uploads/luxury-bedroom.jpg
+- image: ../static/static/uploads/luxury-bedroom.jpg
   altText: Habitación con 1 cama
-- image: ../static/uploads/property-01-exterior.jpg
+- image: ../static/static/uploads/property-01-exterior.jpg
   altText: Habitación con 2 camas
 featured: true
-featuredImage: ../static/uploads/property-01-exterior.jpg
+featuredImage: ../static/static/uploads/property-01-exterior.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-carrera-83-calle-33e
 ---
