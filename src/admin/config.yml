@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: ahsath/real-state-gridsome-theme
+  name: git-gateway
 
 # This line should *not* be indented
 media_folder: "static/uploads" # Media files will be stored in the repo under static/uploads
@@ -10,8 +9,8 @@ collections:
   - name: apartamentos-construsuenos
     label: "Apartamentos Construsueños"
     folder: "properties/"
-    create: true
     slug: "{{slug}}"
+    create: true
     fields: 
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Descripcion", name: "description", widget: "string"}
