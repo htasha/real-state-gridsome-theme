@@ -10,6 +10,7 @@ collections:
   - name: apartamentos-construsuenos
     label: "Apartamentos Construsueños"
     folder: "properties/"
+    create: true
     slug: "{{slug}}"
     fields: 
       - {label: "Titulo", name: "title", widget: "string"}
