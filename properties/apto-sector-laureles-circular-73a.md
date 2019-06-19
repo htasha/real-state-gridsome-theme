@@ -11,7 +11,7 @@ kitchen: 1
 kitchenFurnished: true
 wifi: true
 tv: true
-tvType: Smart TV
+leasing: "Renta"
 propertyImages:
 - image: ./images/luxury-bedroom.jpg
   altText: Habitación con 1 cama

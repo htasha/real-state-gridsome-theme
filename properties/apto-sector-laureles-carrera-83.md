@@ -11,7 +11,7 @@ kitchen: 1
 kitchenFurnished: true
 wifi: true
 tv: true
-tvType: Smart TV
+leasing: "Venta"
 propertyImages:
 - image: ./images/apartamento-1-camas-2.jpg
   altText: Habitación con 1 cama

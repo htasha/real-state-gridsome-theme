@@ -4,14 +4,14 @@ description: Se renta acogedor apartamento amoblado en sector Laureles con un á
 address: Carrera 83, calle 33E
 area: 70
 stratum: 5
-bedrooms: 4
-beds: 2
+bedrooms: 2
+beds: 4
 bathrooms: 2
 kitchen: 1
 kitchenFurnished: false
 wifi: true
 tv: true
-tvType: Smart TV
+leasing: "Venta"
 propertyImages:
 - image: ./images/apartamento-1-camas-2.jpg
   altText: Habitación con 1 cama

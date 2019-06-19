@@ -9,7 +9,7 @@
       />
       <div class="property__gradient">
         <b-container class="property__title">
-          <h2 class="text-white py-3 mb-0 font-weight-normal">{{$page.property.title}}</h2>
+          <h2 class="text-white py-3 mb-0 font-weight-normal">{{ $page.property.title }}</h2>
         </b-container>
       </div>
     </div>
@@ -19,7 +19,7 @@
           <b-col lg="7">
             <span class="d-flex align-items-center mb-3">
               <h4 class="font-weight-normal mb-0 mr-2">{{ $page.property.title }}</h4>
-              <b-badge variant="primary">Venta</b-badge>
+              <b-badge variant="primary">{{ $page.property.leasing }}</b-badge>
             </span>
             <span class="d-flex align-items-center">
               <font-awesome icon="map-marker-alt" class="text-muted"></font-awesome>
@@ -72,7 +72,7 @@
                 >{{ $page.property.bathrooms }} baño</span>
               </b-col>
               <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
-                <font-awesome icon="bath" class="text-primary"></font-awesome>
+                <font-awesome icon="utensils" class="text-primary"></font-awesome>
                 <span
                   v-if="$page.property.kitchenFurnished"
                   class="h6 text-muted mb-0 ml-2 font-weight-normal"
@@ -82,7 +82,29 @@
                   class="h6 text-muted mb-0 ml-2 font-weight-normal"
                 >{{ $page.property.kitchen }} cocina no amoblada</span>
               </b-col>
+              <b-col
+                v-if="$page.property.wifi"
+                cols="6"
+                sm="4"
+                class="d-flex align-items-center h-48"
+              >
+                <font-awesome icon="wifi" class="text-primary"></font-awesome>
+                <span class="h6 text-muted mb-0 ml-2 font-weight-normal">WiFi</span>
+              </b-col>
+              <b-col
+                v-if="$page.property.tv"
+                cols="6"
+                sm="4"
+                class="d-flex align-items-center h-48"
+              >
+                <font-awesome icon="tv" class="text-primary"></font-awesome>
+                <span class="h6 text-muted mb-0 ml-2 font-weight-normal">TV</span>
+              </b-col>
             </b-row>
+            <section class="mt-5">
+              <h4 class="font-weight-normal mb-3">Descripción del Apartamento</h4>
+              <p class="text-secondary">{{ $page.property.description }}</p>
+            </section>
           </b-col>
           <b-col></b-col>
         </b-row>
@@ -98,6 +120,7 @@ query Properties($path: String) {
     featuredImage (width: 1366, quality: 85)
     featuredImageAltText
     title
+    description
     address
     stratum
     area
@@ -106,6 +129,9 @@ query Properties($path: String) {
     bathrooms
     kitchen
     kitchenFurnished
+    wifi
+    tv
+    leasing
     propertyImages {
       image (height: 350, width: 500, quality: 90)
       altText
