@@ -8,7 +8,7 @@ bedrooms: 4
 beds: 2
 bathrooms: 2
 kitchen: 1
-kitchenFurnished: true
+kitchenFurnished: false
 wifi: true
 tv: true
 tvType: Smart TV
