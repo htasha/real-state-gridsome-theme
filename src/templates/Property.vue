@@ -16,7 +16,7 @@
     <section class="py-5">
       <b-container>
         <b-row>
-          <b-col lg="8">
+          <b-col lg="7">
             <span class="d-flex align-items-center mb-3">
               <h4 class="font-weight-normal mb-0 mr-2">{{ $page.property.title }}</h4>
               <b-badge variant="primary">Venta</b-badge>
@@ -52,7 +52,7 @@ query Properties($path: String) {
     title
     address
     propertyImages {
-      image (height: 350, width: 500, quality: 100)
+      image (height: 350, width: 500, quality: 90)
       altText
     }
   }
