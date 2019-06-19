@@ -35,22 +35,77 @@
                 </template>
               </b-carousel-slide>
             </b-carousel>
+            <b-row class="mt-5" no-gutters>
+              <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
+                <font-awesome icon="crown" class="text-primary"></font-awesome>
+                <span
+                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                >Estrato {{ $page.property.stratum }}</span>
+              </b-col>
+              <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
+                <font-awesome icon="vector-square" class="text-primary"></font-awesome>
+                <span class="h6 text-muted mb-0 ml-2 font-weight-normal">
+                  {{ $page.property.area }} m
+                  <sup>2</sup>
+                </span>
+              </b-col>
+              <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
+                <font-awesome icon="bed" class="text-primary"></font-awesome>
+                <span
+                  v-if="$page.property.bedrooms > 1"
+                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                >{{ $page.property.bedrooms }} habitaciones</span>
+                <span
+                  v-else
+                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                >{{ $page.property.bedrooms }} habitación</span>
+              </b-col>
+              <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
+                <font-awesome icon="bath" class="text-primary"></font-awesome>
+                <span
+                  v-if="$page.property.bathrooms > 1"
+                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                >{{ $page.property.bathrooms }} baños</span>
+                <span
+                  v-else
+                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                >{{ $page.property.bathrooms }} baño</span>
+              </b-col>
+              <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
+                <font-awesome icon="bath" class="text-primary"></font-awesome>
+                <span
+                  v-if="$page.property.kitchenFurnished"
+                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                >{{ $page.property.kitchen }} cocina amoblada</span>
+                <span
+                  v-else
+                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                >{{ $page.property.kitchen }} cocina no amoblada</span>
+              </b-col>
+            </b-row>
           </b-col>
           <b-col></b-col>
         </b-row>
       </b-container>
     </section>
+    <the-freaking-footer></the-freaking-footer>
   </div>
 </template>
 
 <page-query>
 query Properties($path: String) {
   property(path: $path) {
-    id
     featuredImage (width: 1366, quality: 85)
     featuredImageAltText
     title
     address
+    stratum
+    area
+    beds
+    bedrooms
+    bathrooms
+    kitchen
+    kitchenFurnished
     propertyImages {
       image (height: 350, width: 500, quality: 90)
       altText
@@ -61,7 +116,6 @@ query Properties($path: String) {
 
 <script>
 import { BBadge } from "bootstrap-vue";
-[{ image: {}, altText: "alttext" }];
 export default {
   components: {
     BBadge
@@ -70,20 +124,12 @@ export default {
 </script>
 
 <style>
-.property {
-  position: relative;
-}
 .property__grid {
   display: grid;
 }
 .property__gradient {
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), #000);
   background-image: linear-gradient(rgba(0, 0, 0, 0), #000);
-}
-.property__img {
-  min-height: 300px;
-  max-height: 350px;
-  z-index: 1;
 }
 .property__gradient {
   align-self: end;
@@ -98,14 +144,5 @@ export default {
   object-fit: cover;
   min-height: 300px;
   max-height: 350px;
-}
-.property__img::before {
-  content: "";
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 </style>
