@@ -6,6 +6,9 @@
 
 module.exports = {
   siteName: 'Construsueños',
+  siteDescription: 'siteDescription',
+  siteUrl: 'siteUrl',
+  titleTemplate: 'Construsueños · %s',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
