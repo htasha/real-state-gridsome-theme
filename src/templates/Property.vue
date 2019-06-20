@@ -22,7 +22,7 @@
               <b-badge variant="primary">{{ $page.property.leasing }}</b-badge>
             </span>
             <span class="d-flex align-items-center">
-              <font-awesome icon="map-marker-alt" class="text-muted"></font-awesome>
+              <font-awesome icon="map-marker-alt" class="text-gray-light"></font-awesome>
               <h6 class="text-muted font-weight-normal mb-0 ml-2">{{ $page.property.address }}</h6>
             </span>
             <b-carousel :interval="5000" controls fade class="mt-5">
@@ -31,7 +31,12 @@
                 :key="i"
               >
                 <template #img>
-                  <g-image :src="image" quality="100" class="carousel__image w-100" :alt="altText"></g-image>
+                  <g-image
+                    :src="image"
+                    quality="100"
+                    class="carousel__image w-100 rounded-lg"
+                    :alt="altText"
+                  ></g-image>
                 </template>
               </b-carousel-slide>
             </b-carousel>
@@ -105,8 +110,142 @@
               <h4 class="font-weight-normal mb-3">Descripción del Apartamento</h4>
               <p class="text-secondary">{{ $page.property.description }}</p>
             </section>
+            <section class="mt-5">
+              <h4 class="font-weight-normal mb-5">Detalles adicionales</h4>
+              <h6 class="text-muted font-weight-medium text-uppercase mb-3">Comodidades Exteriores</h6>
+              <b-list-group class="flex-row flex-wrap">
+                <b-list-group-item
+                  v-for="(amenities, i) in $page.property.outsideAmenities"
+                  :key="i"
+                  class="mr-2 mt-2 rounded-lg h6 font-weight-normal"
+                >{{ amenities }}</b-list-group-item>
+              </b-list-group>
+            </section>
+            <section class="mt-5">
+              <h6 class="text-muted font-weight-medium text-uppercase mb-3">Comodidades Interiores</h6>
+              <b-list-group class="flex-row flex-wrap">
+                <b-list-group-item
+                  v-for="(amenities, i) in $page.property.insideAmenities"
+                  :key="i"
+                  class="mr-2 mt-2 rounded-lg h6 font-weight-normal"
+                >{{ amenities }}</b-list-group-item>
+              </b-list-group>
+            </section>
           </b-col>
-          <b-col></b-col>
+          <b-col lg="5">
+            <section class="mt-5 mt-lg-0">
+              <b-card
+                class="rounded-lg mt-5 mt-lg-0 mx-auto ml-md-0 shadow-sm border-0 rounded-lg property__card"
+                body-class="p-0"
+                no-body
+              >
+                <b-card-body class="p-0">
+                  <div class="p-4 pt-4">
+                    <h6
+                      class="font-weight-medium text-uppercase text-muted"
+                    >En {{ $page.property.leasing }} por</h6>
+                    <b-card-title
+                      title-tag="h5"
+                      class="text-primary mb-0"
+                    >{{ $page.property.price }}</b-card-title>
+                  </div>
+                </b-card-body>
+                <b-form @submit.prevent>
+                  <b-card-body class="pt-4 pb-1 px-4">
+                    <b-form-group>
+                      <b-form-input
+                        type="text"
+                        placeholder="Nombre"
+                        required
+                        aria-label="Ingresa tu nombre"
+                        class="py-4 border-light"
+                      ></b-form-input>
+                    </b-form-group>
+                    <b-form-group
+                      description="Nunca compartiremos tu correo electrónico con nadie."
+                    >
+                      <b-form-input
+                        type="email"
+                        placeholder="Correo"
+                        required
+                        aria-label="Ingresa tu correo"
+                        class="py-4 border-light"
+                      ></b-form-input>
+                    </b-form-group>
+                    <b-form-group>
+                      <b-form-input
+                        type="tel"
+                        placeholder="Teléfono"
+                        required
+                        aria-label="Ingresa tu número telefónico"
+                        class="py-4 border-light"
+                      ></b-form-input>
+                    </b-form-group>
+                    <b-form-group>
+                      <b-form-textarea
+                        placeholder="Mensaje"
+                        rows="4"
+                        max-rows="6"
+                        aria-label="Ingresa tu mensaje"
+                        required
+                        value="Estoy interesad@ en la propiedad y quería reservar una cita"
+                        :no-resize="true"
+                        class="border-light"
+                      ></b-form-textarea>
+                    </b-form-group>
+                  </b-card-body>
+                  <b-card-body class="py-3 px-2 d-flex bg-light">
+                    <b-button type="submit" variant="primary" class="ml-auto mb-0 rounded-lg">
+                      <span class="text-uppercase h6 font-weight-medium">Enviar mensaje</span>
+                    </b-button>
+                  </b-card-body>
+                </b-form>
+              </b-card>
+            </section>
+            <section class="mt-5 property__agent">
+              <b-media
+                class="shadow-sm rounded-lg p-3 property__card mx-auto ml-md-0 flex-column align-items-center flex-md-row"
+              >
+                <template #aside class="m-0">
+                  <g-image
+                    src="~/assets/images/agente-inmobiliario-210w.jpg"
+                    width="100"
+                    height="100"
+                    quality="100"
+                    class="rounded-circle ml-3 ml-md-0 mr-md-3"
+                  />
+                </template>
+                <div class="text-center text-md-left mt-4 mt-md-0">
+                  <h5 class="font-weight-normal">Adriana García</h5>
+                  <div class="text-primary">Agente inmobiliario</div>
+                  <div class="mt-1">
+                    <b-link
+                      class="text-decoration-none text-gray-light font-weight-normal"
+                      aria-label="Enviar correo"
+                    >
+                      <span class="pr-1">
+                        <font-awesome icon="envelope" class="text--small"></font-awesome>
+                      </span>
+                      construsueños@gmail.com
+                    </b-link>
+                  </div>
+                  <div class="mt-1">
+                    <b-link
+                      aria-label="Chat en WhatsApp"
+                      target="__blank"
+                      class="text-gray-light text-decoration-none"
+                      href="https://wa.me/123123123"
+                    >
+                      <span class="pr-1">
+                        <font-awesome :icon="['fab', 'whatsapp']" class="text--small"></font-awesome>
+                      </span>
+                      310 (123) 3409
+                    </b-link>
+                  </div>
+                </div>
+              </b-media>
+            </section>
+          </b-col>
         </b-row>
       </b-container>
     </section>
@@ -121,6 +260,7 @@ query Properties($path: String) {
     featuredImageAltText
     title
     description
+    price
     address
     stratum
     area
@@ -136,15 +276,18 @@ query Properties($path: String) {
       image (height: 350, width: 500, quality: 90)
       altText
     }
+    outsideAmenities
+    insideAmenities
   }
 }
 </page-query>
 
 <script>
-import { BBadge } from "bootstrap-vue";
+import { BBadge, BMedia } from "bootstrap-vue";
 export default {
   components: {
-    BBadge
+    BBadge,
+    BMedia
   }
 };
 </script>
@@ -170,5 +313,12 @@ export default {
   object-fit: cover;
   min-height: 300px;
   max-height: 350px;
+}
+.property__card {
+  max-width: 400px;
+}
+.property__agent {
+  position: sticky;
+  top: 100px;
 }
 </style>
