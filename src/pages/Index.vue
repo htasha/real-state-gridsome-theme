@@ -61,7 +61,7 @@ export default {
     PropertiesFeatureCards
   },
   metaInfo: {
-    title: "Some fancy brand name"
+    title: "Inmobiliaria"
   }
 };
 </script>
