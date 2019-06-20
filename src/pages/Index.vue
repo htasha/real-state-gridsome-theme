@@ -22,6 +22,7 @@ query AllProperties ($page: Int) {
         featuredImageAltText
         title
         address
+        leasing
       }
     }
   }
