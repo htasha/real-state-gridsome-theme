@@ -27,7 +27,7 @@
           <b-card-title title-tag="h5">Atracciones Turísticas</b-card-title>
           <b-card-text
             class="text-muted"
-          >Situados a 10 minutos en carro del Pueblo Paisa, a 5 minutos del estadio y 15 minunots del centro de la ciudad, 8 min en carro a la estación Floresta del metro y mucho más.</b-card-text>
+          >Situados a 10 minutos en carro del Pueblo Paisa, a 5 minutos del estadio y 15 minutos del centro de la ciudad, 8 min en carro a la estación Floresta del metro y mucho más.</b-card-text>
         </b-card>
       </the-grid>
     </b-container>
