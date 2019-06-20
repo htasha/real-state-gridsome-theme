@@ -2,7 +2,7 @@
   <section class="border-top border-bottom py-5">
     <b-container>
       <the-grid>
-        <b-card>
+        <b-card class="border-0 rounded-lg shadow-sm">
           <div class="pb-3">
             <font-awesome icon="building" size="2x" class="text-primary"></font-awesome>
           </div>
@@ -11,7 +11,7 @@
             class="text-muted"
           >Alquiler por días, cortas y largas temporadas a precios económicos. Consultar disponibilidad.</b-card-text>
         </b-card>
-        <b-card>
+        <b-card class="border-0 rounded-lg shadow-sm">
           <div class="pb-3">
             <font-awesome icon="crown" size="2x" class="text-primary"></font-awesome>
           </div>
@@ -20,7 +20,7 @@
             class="text-muted"
           >Apartamentos estrato 5 ubicados cerca de almacenes de cadena, centros comerciales y un excelente medio de transporte aledaño a universidades.</b-card-text>
         </b-card>
-        <b-card>
+        <b-card class="border-0 rounded-lg shadow-sm">
           <div class="pb-3">
             <font-awesome icon="map-marked-alt" size="2x" class="text-primary"></font-awesome>
           </div>

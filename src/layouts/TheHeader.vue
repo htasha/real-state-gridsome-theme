@@ -1,6 +1,6 @@
 <template>
   <header>
-    <b-navbar toggleable="sm" fixed="top" variant="white" class="border-bottom">
+    <b-navbar toggleable="sm" fixed="top" variant="white" class="border-bottom shadow-sm border-0">
       <b-navbar-brand to="/">Some fancy logo</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse" class="border-0"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>

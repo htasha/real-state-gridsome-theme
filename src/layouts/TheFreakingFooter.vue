@@ -36,7 +36,7 @@
             </ul>
           </b-col>
           <b-col col md="3" lg="2">
-            <h6 class="text-muted mb-3 text-uppercase">La Empresa</h6>
+            <h6 class="text-muted mb-3 text-uppercase">Construsueños</h6>
             <ul class="p-0 m-0">
               <li class="list-unstyled py-1 d-flex align-items-center">
                 <g-link to="/" class="text-decoration-none">
