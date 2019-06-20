@@ -158,7 +158,7 @@
                         placeholder="Nombre"
                         required
                         aria-label="Ingresa tu nombre"
-                        class="py-4 border-light"
+                        class="py-4"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group
@@ -169,7 +169,7 @@
                         placeholder="Correo"
                         required
                         aria-label="Ingresa tu correo"
-                        class="py-4 border-light"
+                        class="py-4"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group>
@@ -178,7 +178,7 @@
                         placeholder="Teléfono"
                         required
                         aria-label="Ingresa tu número telefónico"
-                        class="py-4 border-light"
+                        class="py-4"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group>
@@ -190,7 +190,6 @@
                         required
                         value="Estoy interesad@ en la propiedad y quería reservar una cita"
                         :no-resize="true"
-                        class="border-light"
                       ></b-form-textarea>
                     </b-form-group>
                   </b-card-body>
@@ -288,6 +287,12 @@ export default {
   components: {
     BBadge,
     BMedia
+  },
+  metaInfo() {
+    return {
+      title: this.$page.property.title,
+      titleTemplate: "%s · Construsueños"
+    };
   }
 };
 </script>
