@@ -25,7 +25,7 @@
               <font-awesome icon="map-marker-alt" class="text-gray-light"></font-awesome>
               <h6 class="text-muted font-weight-normal mb-0 ml-2">{{ $page.property.address }}</h6>
             </span>
-            <b-carousel :interval="5000" controls fade class="mt-5">
+            <b-carousel :interval="5000" controls indicators fade class="mt-5">
               <b-carousel-slide
                 v-for="({ image, altText }, i) in $page.property.propertyImages"
                 :key="i"
