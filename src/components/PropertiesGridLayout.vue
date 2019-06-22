@@ -1,10 +1,10 @@
 <template>
   <section class="bg-light py-5">
-    <b-container class="pb-5">
+    <b-container>
       <the-grid>
-        <div class="grid__header text-lg-left">
+        <div class="grid__header">
           <h6 class="text-muted font-weight-medium text-uppercase">Recientes</h6>
-          <h2>Apartamentos</h2>
+          <h4>Apartamentos</h4>
           <p class="text-muted">Echa un vistazo a algunos de nuestros últimos inmuebles</p>
         </div>
         <b-card

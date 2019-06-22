@@ -7,6 +7,7 @@
       :all-properties="this.$page.allProperties.edges"
       :page-info="this.$page.allProperties.pageInfo"
     ></properties-grid-layout>
+    <our-partners></our-partners>
     <the-freaking-footer></the-freaking-footer>
   </div>
 </template>
@@ -53,12 +54,15 @@ query AllProperties ($page: Int) {
 import FeaturedApartmentsCarousel from "~/components/FeaturedApartmentsCarousel";
 import PropertiesGridLayout from "~/components/PropertiesGridLayout";
 import PropertiesFeatureCards from "~/components/PropertiesFeatureCards.vue";
+import OurPartners from "~/components/Partners.vue";
+
 export default {
   name: "IndexPage",
   components: {
     FeaturedApartmentsCarousel,
     PropertiesGridLayout,
-    PropertiesFeatureCards
+    PropertiesFeatureCards,
+    OurPartners
   },
   metaInfo: {
     title: "Inmobiliaria"
