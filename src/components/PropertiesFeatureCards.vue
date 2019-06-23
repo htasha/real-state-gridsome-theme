@@ -1,5 +1,5 @@
 <template>
-  <section class="border-top border-bottom py-5">
+  <section class="bg-light py-5">
     <b-container>
       <the-grid>
         <b-card class="border-0 rounded-lg shadow-sm">

@@ -3,11 +3,11 @@
     <the-header></the-header>
     <featured-apartments-carousel :featured-properties="$page.featuredProperties.edges"></featured-apartments-carousel>
     <properties-feature-cards></properties-feature-cards>
+    <our-partners></our-partners>
     <properties-grid-layout
       :all-properties="this.$page.allProperties.edges"
       :page-info="this.$page.allProperties.pageInfo"
     ></properties-grid-layout>
-    <our-partners></our-partners>
     <the-freaking-footer></the-freaking-footer>
   </div>
 </template>

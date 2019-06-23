@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-light py-5">
+  <section class="py-5 border-top border-bottom">
     <b-container>
       <the-grid>
         <div class="grid__header">

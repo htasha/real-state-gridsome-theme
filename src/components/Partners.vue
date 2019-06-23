@@ -1,11 +1,11 @@
 <template>
-  <section class="py-5">
+  <section class="pb-5 bg-light">
     <b-container>
-      <div class="text-center">
+      <!-- <div class="text-center">
         <h6 class="text-muted font-weight-medium text-uppercase">Membresías y Afiliaciones</h6>
-        <h4>Nuestra empresa esta respaldada por entidades de confianza</h4>
-      </div>
-      <b-row align-h="center" align-v="center" class="mt-5">
+        <h5>Nuestra empresa esta respaldada por entidades de confianza</h5>
+      </div>-->
+      <b-row align-h="center" align-v="center">
         <b-col md="3" class="text-center py-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
