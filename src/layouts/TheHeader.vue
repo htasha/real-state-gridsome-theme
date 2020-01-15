@@ -1,6 +1,11 @@
 <template>
   <header>
-    <b-navbar toggleable="sm" fixed="top" variant="white" class="border-bottom shadow-sm border-0">
+    <b-navbar
+      toggleable="sm"
+      fixed="top"
+      variant="white"
+      class="border-bottom shadow-sm border-0"
+    >
       <b-navbar-brand to="/">Some fancy logo</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse" class="border-0"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -17,7 +22,13 @@
               href="tel:18005551234"
               class="text-white d-flex align-items-center"
             >
-              <font-awesome icon="phone" flip="horizontal" size="sm" class="mr-2"></font-awesome>1-800-555-1234
+              <font-awesome
+                icon="phone"
+                flip="horizontal"
+                size="sm"
+                class="mr-2"
+              ></font-awesome
+              >1-800-555-1234
             </b-button>
           </b-nav-text>
         </b-navbar-nav>
@@ -65,7 +76,7 @@ export default {
 
 <static-query>
 query {
-  metaData {
+  metadata {
     siteName
   }
 }
