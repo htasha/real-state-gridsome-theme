@@ -3,22 +3,45 @@
     <b-container>
       <the-grid>
         <div class="grid__header">
-          <h6 class="text-muted font-weight-medium text-uppercase">Recientes</h6>
+          <h6 class="text-muted font-weight-medium text-uppercase">
+            Recientes
+          </h6>
           <h4>Apartamentos</h4>
-          <p class="text-muted">Echa un vistazo a algunos de nuestros últimos inmuebles</p>
+          <p class="text-muted">
+            Echa un vistazo a algunos de nuestros últimos inmuebles
+          </p>
         </div>
         <b-card
-          v-for="{ node: { id, path, featuredImage, featuredImageAltText, title, address, stratum, bedrooms, bathrooms, area } } in nodes"
+          v-for="{
+            node: {
+              id,
+              path,
+              featuredImage,
+              featuredImageAltText,
+              title,
+              address,
+              stratum,
+              bedrooms,
+              bathrooms,
+              area
+            }
+          } in nodes"
           :key="id"
           no-body
           class="rounded-lg shadow-sm border-0 rounded-lg"
         >
           <g-link :to="path">
-            <g-image class="card-img" :src="featuredImage" :alt="featuredImageAltText"></g-image>
+            <g-image
+              class="card-img"
+              :src="featuredImage"
+              :alt="featuredImageAltText"
+            ></g-image>
           </g-link>
           <b-card-body body-class="p-3">
             <b-card-title title-tag="h5">
-              <g-link :to="path" class="text-dark text-decoration-none">{{ title }}</g-link>
+              <g-link :to="path" class="text-dark text-decoration-none">{{
+                title
+              }}</g-link>
             </b-card-title>
             <b-card-sub-title>{{ address }}</b-card-sub-title>
           </b-card-body>
@@ -29,7 +52,10 @@
             >
               <div class="d-flex align-items-center">
                 <div class="properties-list__icon mr-3">
-                  <font-awesome icon="crown" class="text--small text-gray-light"></font-awesome>
+                  <font-awesome
+                    icon="crown"
+                    class="text--small text-gray-light"
+                  ></font-awesome>
                 </div>
                 <h6 class="mb-0 font-weight-normal">Estrato</h6>
               </div>
@@ -41,7 +67,10 @@
             >
               <div class="d-flex align-items-center">
                 <div class="properties-list__icon mr-3">
-                  <font-awesome icon="bed" class="text--small text-gray-light"></font-awesome>
+                  <font-awesome
+                    icon="bed"
+                    class="text--small text-gray-light"
+                  ></font-awesome>
                 </div>
                 <h6 class="mb-0 font-weight-normal">Habitaciones</h6>
               </div>
@@ -53,7 +82,10 @@
             >
               <div class="d-flex align-items-center">
                 <div class="properties-list__icon mr-3">
-                  <font-awesome icon="bath" class="text--small text-gray-light"></font-awesome>
+                  <font-awesome
+                    icon="bath"
+                    class="text--small text-gray-light"
+                  ></font-awesome>
                 </div>
                 <h6 class="mb-0 font-weight-normal">Baños</h6>
               </div>
@@ -65,7 +97,10 @@
             >
               <div class="d-flex align-items-center">
                 <div class="properties-list__icon mr-3">
-                  <font-awesome icon="vector-square" class="text--small text-gray-light"></font-awesome>
+                  <font-awesome
+                    icon="vector-square"
+                    class="text--small text-gray-light"
+                  ></font-awesome>
                 </div>
                 <h6 class="mb-0 font-weight-normal">Área</h6>
               </div>
@@ -73,7 +108,7 @@
             </b-list-group-item>
           </b-list-group>
           <b-list-group-item class="border-0">
-            <h6 class="font-weight-normal">Renta</h6 focus:outline-none>
+            <h6 class="font-weight-normal">Renta</h6>
             <h5 class="text-primary">$ 100,000 / mes</h5>
           </b-list-group-item>
         </b-card>
@@ -144,4 +179,3 @@ export default {
   height: 24px;
 }
 </style>
-
