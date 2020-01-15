@@ -1,4 +1,32 @@
 ---
 label: Property
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+    max: '40'
+  label: Titulo
+  description: p.ej. Apartamento en sector Laureles
+- name: address
+  type: text
+  config:
+    required: true
+    max: '30'
+  label: Dirección
+  description: Dirección de la propiedad
+- name: leasing
+  type: select
+  default: Venta
+  config:
+    required: true
+    options:
+    - Venta
+    - Renta
+    source:
+      type: simple
+      section: propiedadess
+      file: properties/apto-sector-laureles-carrera-79.md
+      path: insideAmenities
+  label: Tipo de arrendamiento
