@@ -21,6 +21,6 @@ module.exports = {
     }
   ],
   templates: {
-    Property: "/:slug"
+    Property: "/:title-:address"
   }
 };
