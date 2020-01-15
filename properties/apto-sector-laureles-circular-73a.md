@@ -14,10 +14,10 @@ wifi: true
 tv: true
 leasing: "Renta"
 propertyImages:
-- image: ./images/luxury-bedroom.jpg
-  altText: Habitación con 1 cama
-- image: ./images/property-01-exterior.jpg
-  altText: Habitación con 2 camas
+  - image: /uploads/luxury-bedroom.jpg
+    altText: Habitación con 1 cama
+  - image: /uploads/property-01-exterior.jpg
+    altText: Habitación con 2 camas
 outsideAmenities:
   - "Asensor"
   - "Zonas Verdes"
@@ -44,7 +44,7 @@ insideAmenities:
   - "Zona de Ropas"
   - "Comedor"
 featured: true
-featuredImage: ./images/property-01-exterior.jpg
+featuredImage: /uploads/property-01-exterior.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-circular-73a-calle-35
 ---

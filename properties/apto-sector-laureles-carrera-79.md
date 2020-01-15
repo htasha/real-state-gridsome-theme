@@ -14,10 +14,10 @@ wifi: true
 tv: true
 leasing: "Venta"
 propertyImages:
-- image: ./images/apartamento-1-camas-2.jpg
-  altText: Habitación con 1 cama
-- image: ./images/apartamento-1-sala.jpg
-  altText: Habitación con 2 camas
+  - image: /uploads/apartamento-1-camas-2.jpg
+    altText: Habitación con 1 cama
+  - image: /uploads/apartamento-1-sala.jpg
+    altText: Habitación con 2 camas
 outsideAmenities:
   - "Asensor"
   - "Zonas Verdes"
@@ -44,7 +44,7 @@ insideAmenities:
   - "Zona de Ropas"
   - "Comedor"
 featured: true
-featuredImage: ./images/drawing-room.jpg
+featuredImage: /uploads/drawing-room.jpg
 featuredImageAltText: Habitación con 1 cama
 slug: apto-sector-laureles-carrera-79-calle-11
 ---
