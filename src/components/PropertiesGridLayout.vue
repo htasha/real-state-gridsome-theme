@@ -16,14 +16,15 @@
             node: {
               id,
               path,
-              featuredImage,
-              featuredImageAltText,
+              propertyImages,
               title,
               address,
               stratum,
               bedrooms,
               bathrooms,
-              area
+              area,
+              leasing,
+              price
             }
           } in nodes"
           :key="id"
@@ -33,9 +34,10 @@
           <g-link :to="path">
             <g-image
               class="card-img"
-              :src="featuredImage"
-              :alt="featuredImageAltText"
-            ></g-image>
+              :src="propertyImages[0].image"
+              :alt="propertyImages[0].altText"
+              style="height: 200px"
+            />
           </g-link>
           <b-card-body body-class="p-3">
             <b-card-title title-tag="h5">
@@ -108,16 +110,19 @@
             </b-list-group-item>
           </b-list-group>
           <b-list-group-item class="border-0">
-            <h6 class="font-weight-normal">Renta</h6>
-            <h5 class="text-primary">$ 100,000 / mes</h5>
+            <h6 class="font-weight-normal">{{ leasing }}</h6>
+            <h5 class="text-primary">
+              ${{ price }} <span v-if="leasing === 'Renta'">/ mes</span>
+            </h5>
           </b-list-group-item>
         </b-card>
-        <!-- <b-button
+        <b-button
+          v-if="disabled"
           class="grid__button mr-auto"
           variant="outline-primary"
           @click="loadMore"
-          :disabled="disabled"
-        >Cargar más</b-button> -->
+          >Cargar más</b-button
+        >
       </the-grid>
     </b-container>
   </section>
@@ -156,7 +161,7 @@ export default {
   },
   computed: {
     disabled() {
-      return this.currentPage === this.totalPages ? true : false;
+      return this.currentPage === this.totalPages ? false : true;
     }
   },
   mounted() {

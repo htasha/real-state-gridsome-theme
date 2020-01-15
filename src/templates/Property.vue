@@ -3,13 +3,15 @@
     <the-header></the-header>
     <div class="property__grid">
       <g-image
-        :src="$page.property.featuredImage"
-        :alt="$page.property.featuredImageAltText"
+        :src="$page.property.propertyImages[0].image"
+        :alt="$page.property.propertyImages[0].altText"
         class="w-100 hero__img"
       />
       <div class="property__gradient">
         <b-container class="property__title">
-          <h2 class="text-white py-3 mb-0 font-weight-normal">{{ $page.property.title }}</h2>
+          <h2 class="text-white py-3 mb-0 font-weight-normal">
+            {{ $page.property.title }}
+          </h2>
         </b-container>
       </div>
     </div>
@@ -18,12 +20,19 @@
         <b-row>
           <b-col lg="7">
             <span class="d-flex align-items-center mb-3">
-              <h4 class="font-weight-normal mb-0 mr-2">{{ $page.property.title }}</h4>
+              <h4 class="font-weight-normal mb-0 mr-2">
+                {{ $page.property.title }}
+              </h4>
               <b-badge variant="primary">{{ $page.property.leasing }}</b-badge>
             </span>
             <span class="d-flex align-items-center">
-              <font-awesome icon="map-marker-alt" class="text-gray-light"></font-awesome>
-              <h6 class="text-muted font-weight-normal mb-0 ml-2">{{ $page.property.address }}</h6>
+              <font-awesome
+                icon="map-marker-alt"
+                class="text-gray-light"
+              ></font-awesome>
+              <h6 class="text-muted font-weight-normal mb-0 ml-2">
+                {{ $page.property.address }}
+              </h6>
             </span>
             <b-carousel :interval="5000" controls indicators fade class="mt-5">
               <b-carousel-slide
@@ -43,12 +52,15 @@
             <b-row class="mt-5" no-gutters>
               <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
                 <font-awesome icon="crown" class="text-primary"></font-awesome>
-                <span
-                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
-                >Estrato {{ $page.property.stratum }}</span>
+                <span class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                  >Estrato {{ $page.property.stratum }}</span
+                >
               </b-col>
               <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
-                <font-awesome icon="vector-square" class="text-primary"></font-awesome>
+                <font-awesome
+                  icon="vector-square"
+                  class="text-primary"
+                ></font-awesome>
                 <span class="h6 text-muted mb-0 ml-2 font-weight-normal">
                   {{ $page.property.area }} m
                   <sup>2</sup>
@@ -59,33 +71,36 @@
                 <span
                   v-if="$page.property.bedrooms > 1"
                   class="h6 text-muted mb-0 ml-2 font-weight-normal"
-                >{{ $page.property.bedrooms }} habitaciones</span>
-                <span
-                  v-else
-                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
-                >{{ $page.property.bedrooms }} habitación</span>
+                  >{{ $page.property.bedrooms }} habitaciones</span
+                >
+                <span v-else class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                  >{{ $page.property.bedrooms }} habitación</span
+                >
               </b-col>
               <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
                 <font-awesome icon="bath" class="text-primary"></font-awesome>
                 <span
                   v-if="$page.property.bathrooms > 1"
                   class="h6 text-muted mb-0 ml-2 font-weight-normal"
-                >{{ $page.property.bathrooms }} baños</span>
-                <span
-                  v-else
-                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
-                >{{ $page.property.bathrooms }} baño</span>
+                  >{{ $page.property.bathrooms }} baños</span
+                >
+                <span v-else class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                  >{{ $page.property.bathrooms }} baño</span
+                >
               </b-col>
               <b-col cols="6" sm="4" class="d-flex align-items-center h-48">
-                <font-awesome icon="utensils" class="text-primary"></font-awesome>
+                <font-awesome
+                  icon="utensils"
+                  class="text-primary"
+                ></font-awesome>
                 <span
                   v-if="$page.property.kitchenFurnished"
                   class="h6 text-muted mb-0 ml-2 font-weight-normal"
-                >{{ $page.property.kitchen }} cocina amoblada</span>
-                <span
-                  v-else
-                  class="h6 text-muted mb-0 ml-2 font-weight-normal"
-                >{{ $page.property.kitchen }} cocina no amoblada</span>
+                  >{{ $page.property.kitchen }} cocina amoblada</span
+                >
+                <span v-else class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                  >{{ $page.property.kitchen }} cocina no amoblada</span
+                >
               </b-col>
               <b-col
                 v-if="$page.property.wifi"
@@ -94,7 +109,9 @@
                 class="d-flex align-items-center h-48"
               >
                 <font-awesome icon="wifi" class="text-primary"></font-awesome>
-                <span class="h6 text-muted mb-0 ml-2 font-weight-normal">WiFi</span>
+                <span class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                  >WiFi</span
+                >
               </b-col>
               <b-col
                 v-if="$page.property.tv"
@@ -103,32 +120,42 @@
                 class="d-flex align-items-center h-48"
               >
                 <font-awesome icon="tv" class="text-primary"></font-awesome>
-                <span class="h6 text-muted mb-0 ml-2 font-weight-normal">TV</span>
+                <span class="h6 text-muted mb-0 ml-2 font-weight-normal"
+                  >TV</span
+                >
               </b-col>
             </b-row>
             <section class="mt-5">
-              <h4 class="font-weight-normal mb-3">Descripción del Apartamento</h4>
+              <h4 class="font-weight-normal mb-3">
+                Descripción del Apartamento
+              </h4>
               <p class="text-secondary">{{ $page.property.description }}</p>
             </section>
             <section class="mt-5">
               <h4 class="font-weight-normal mb-5">Detalles adicionales</h4>
-              <h6 class="text-muted font-weight-medium text-uppercase mb-3">Comodidades Exteriores</h6>
+              <h6 class="text-muted font-weight-medium text-uppercase mb-3">
+                Comodidades Exteriores
+              </h6>
               <b-list-group class="flex-row flex-wrap">
                 <b-list-group-item
                   v-for="(amenities, i) in $page.property.outsideAmenities"
                   :key="i"
                   class="mr-2 mt-2 rounded-lg h6 font-weight-normal"
-                >{{ amenities }}</b-list-group-item>
+                  >{{ amenities }}</b-list-group-item
+                >
               </b-list-group>
             </section>
             <section class="mt-5">
-              <h6 class="text-muted font-weight-medium text-uppercase mb-3">Comodidades Interiores</h6>
+              <h6 class="text-muted font-weight-medium text-uppercase mb-3">
+                Comodidades Interiores
+              </h6>
               <b-list-group class="flex-row flex-wrap">
                 <b-list-group-item
                   v-for="(amenities, i) in $page.property.insideAmenities"
                   :key="i"
                   class="mr-2 mt-2 rounded-lg h6 font-weight-normal"
-                >{{ amenities }}</b-list-group-item>
+                  >{{ amenities }}</b-list-group-item
+                >
               </b-list-group>
             </section>
           </b-col>
@@ -141,13 +168,15 @@
               >
                 <b-card-body class="p-0">
                   <div class="p-4 pt-4">
-                    <h6
-                      class="font-weight-medium text-uppercase text-muted"
-                    >En {{ $page.property.leasing }} por</h6>
-                    <b-card-title
-                      title-tag="h5"
-                      class="text-primary mb-0"
-                    >{{ $page.property.price }}</b-card-title>
+                    <h6 class="font-weight-medium text-uppercase text-muted">
+                      En {{ $page.property.leasing }} por
+                    </h6>
+                    <b-card-title title-tag="h5" class="text-primary mb-0"
+                      >${{ $page.property.price }}
+                      <span v-if="$page.property.leasing === 'Renta'"
+                        >/ mes</span
+                      ></b-card-title
+                    >
                   </div>
                 </b-card-body>
                 <b-form @submit.prevent>
@@ -194,8 +223,14 @@
                     </b-form-group>
                   </b-card-body>
                   <b-card-body class="py-3 px-2 d-flex bg-light">
-                    <b-button type="submit" variant="primary" class="ml-auto mb-0 rounded-lg">
-                      <span class="text-uppercase h6 font-weight-medium">Enviar mensaje</span>
+                    <b-button
+                      type="submit"
+                      variant="primary"
+                      class="ml-auto mb-0 rounded-lg"
+                    >
+                      <span class="text-uppercase h6 font-weight-medium"
+                        >Enviar mensaje</span
+                      >
                     </b-button>
                   </b-card-body>
                 </b-form>
@@ -223,7 +258,10 @@
                       aria-label="Enviar correo"
                     >
                       <span class="pr-1">
-                        <font-awesome icon="envelope" class="text--small"></font-awesome>
+                        <font-awesome
+                          icon="envelope"
+                          class="text--small"
+                        ></font-awesome>
                       </span>
                       construsueños@gmail.com
                     </b-link>
@@ -236,7 +274,10 @@
                       href="https://wa.me/123123123"
                     >
                       <span class="pr-1">
-                        <font-awesome :icon="['fab', 'whatsapp']" class="text--small"></font-awesome>
+                        <font-awesome
+                          :icon="['fab', 'whatsapp']"
+                          class="text--small"
+                        ></font-awesome>
                       </span>
                       310 (123) 3409
                     </b-link>
@@ -255,8 +296,6 @@
 <page-query>
 query Properties($path: String) {
   property(path: $path) {
-    featuredImage (width: 1366, quality: 85)
-    featuredImageAltText
     title
     description
     price
