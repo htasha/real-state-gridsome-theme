@@ -15,7 +15,8 @@ module.exports = {
       options: {
         typeName: "Property",
         baseDir: "./properties",
-        path: "*.md"
+        path: "*.md",
+        resolveAbsolutePaths: true
       }
     }
   ],
