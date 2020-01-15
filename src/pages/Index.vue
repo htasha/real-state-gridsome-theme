@@ -1,7 +1,9 @@
 <template>
   <div>
     <the-header></the-header>
-    <featured-apartments-carousel :featured-properties="$page.featuredProperties.edges"></featured-apartments-carousel>
+    <featured-apartments-carousel
+      :featured-properties="$page.featuredProperties.edges"
+    ></featured-apartments-carousel>
     <properties-feature-cards></properties-feature-cards>
     <our-partners></our-partners>
     <properties-grid-layout
@@ -13,7 +15,7 @@
 </template>
 
 <page-query>
-query AllProperties ($page: Int) {
+query AllProperties {
   featuredProperties: allProperty (filter: { featured: { eq: true } }) {
     edges {
       node {
@@ -27,7 +29,7 @@ query AllProperties ($page: Int) {
       }
     }
   }
-  allProperties: allProperty (perPage: 6, page: $page) @paginate {
+  allProperties: allProperty {
     pageInfo {
       currentPage
       totalPages
@@ -57,7 +59,7 @@ import PropertiesFeatureCards from "~/components/PropertiesFeatureCards.vue";
 import OurPartners from "~/components/Partners.vue";
 
 export default {
-  name: "IndexPage",
+  name: "Home",
   components: {
     FeaturedApartmentsCarousel,
     PropertiesGridLayout,

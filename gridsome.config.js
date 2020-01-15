@@ -1,22 +1,22 @@
-// This is where project configuration and plugin options are located. 
+// This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Construsueños',
-  siteDescription: 'siteDescription',
-  siteUrl: 'siteUrl',
-  titleTemplate: 'Construsueños · %s',
+  siteName: "Construsueños",
+  siteDescription: "siteDescription",
+  siteUrl: "siteUrl",
+  titleTemplate: "Construsueños · %s",
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        path: 'properties/*.md',
-        typeName: 'Property',
-        route: '/apartamento/:slug',
+        path: "properties/*.md",
+        typeName: "Property",
+        route: "/apartamento/:slug"
       }
     }
   ]
-}
+};

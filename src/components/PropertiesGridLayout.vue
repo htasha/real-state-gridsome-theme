@@ -24,7 +24,7 @@
           </b-card-body>
           <b-list-group class="border-top border-bottom">
             <b-list-group-item
-              class="border-0 d-flex align-items-center justify-content-between"
+              class="border-0 d-flex align-items-center justify-content-between focus:outline-none"
               button
             >
               <div class="d-flex align-items-center">
@@ -36,7 +36,7 @@
               <h6 class="mb-0 font-weight-normal">{{ stratum }}</h6>
             </b-list-group-item>
             <b-list-group-item
-              class="border-0 d-flex align-items-center justify-content-between"
+              class="border-0 d-flex align-items-center justify-content-between focus:outline-none"
               button
             >
               <div class="d-flex align-items-center">
@@ -48,7 +48,7 @@
               <h6 class="mb-0 font-weight-normal">{{ bedrooms }}</h6>
             </b-list-group-item>
             <b-list-group-item
-              class="border-0 d-flex align-items-center justify-content-between"
+              class="border-0 d-flex align-items-center justify-content-between focus:outline-none"
               button
             >
               <div class="d-flex align-items-center">
@@ -60,7 +60,7 @@
               <h6 class="mb-0 font-weight-normal">{{ bathrooms }}</h6>
             </b-list-group-item>
             <b-list-group-item
-              class="border-0 d-flex align-items-center justify-content-between"
+              class="border-0 d-flex align-items-center justify-content-between focus:outline-none"
               button
             >
               <div class="d-flex align-items-center">
@@ -73,16 +73,16 @@
             </b-list-group-item>
           </b-list-group>
           <b-list-group-item class="border-0">
-            <h6 class="font-weight-normal">Renta</h6>
+            <h6 class="font-weight-normal">Renta</h6 focus:outline-none>
             <h5 class="text-primary">$ 100,000 / mes</h5>
           </b-list-group-item>
         </b-card>
-        <b-button
+        <!-- <b-button
           class="grid__button mr-auto"
           variant="outline-primary"
           @click="loadMore"
           :disabled="disabled"
-        >Cargar más</b-button>
+        >Cargar más</b-button> -->
       </the-grid>
     </b-container>
   </section>
