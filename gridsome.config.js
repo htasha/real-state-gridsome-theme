@@ -13,10 +13,13 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "properties/*.md",
         typeName: "Property",
-        route: "/apartamento/:slug"
+        baseDir: "./properties",
+        path: "*.md"
       }
     }
-  ]
+  ],
+  templates: {
+    Property: "/:slug"
+  }
 };
