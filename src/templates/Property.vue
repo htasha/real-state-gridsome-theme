@@ -310,6 +310,7 @@ query Properties($path: String) {
     area
     beds
     bedrooms
+    path
     bathrooms
     kitchen
     kitchenFurnished
@@ -334,11 +335,58 @@ export default {
     BMedia
   },
   metaInfo() {
-    return {
-      title: this.$page.property.title,
-      titleTemplate: "%s · Construsueños"
-    };
-  }
+			return {
+        htmlAttrs: {
+					lang: "es"
+				},
+				title: `En ${this.$page.property.leasing.toLowerCase()} ${this.$page.property.title} | $${this.$page.property.price} ${this.$page.property.leasing === 'Renta' ? '/ mes' : ''}`,
+				meta: [
+					{
+						name: "title",
+						content: `En ${this.$page.property.leasing.toLowerCase()} ${this.$page.property.title} | $${this.$page.property.price} ${this.$page.property.leasing === 'Renta' ? '/ mes' : ''}`
+					},
+					{
+						name: "description",
+						content: this.$page.property.description
+					},
+					// og - facebook
+					{
+						property: "og:url",
+						content: `https://lafirmabienesraices.co${this.$page.property.path}`
+					},
+					{
+						property: "og:title",
+						content: `En ${this.$page.property.leasing.toLowerCase()} ${this.$page.property.title} | $${this.$page.property.price} ${this.$page.property.leasing === 'Renta' ? '/ mes' : ''}`
+					},
+					{
+						property: "og:description",
+						content: this.$page.property.description
+					},
+					{
+						property: "og:image",
+						content: `https://lafirmabienesraices.co${this.$page.property.propertyImages[0].image.src}`
+					},
+					// twitter
+					{ property: "twitter:card", content: "summary_large_image" },
+					{
+						property: "twitter:url",
+						content: `https://lafirmabienesraices.co${this.$page.property.path}`
+					},
+					{
+						property: "twitter:title",
+						content: `En ${this.$page.property.leasing.toLowerCase()} ${this.$page.property.title} | $${this.$page.property.price} ${this.$page.property.leasing === 'Renta' ? '/ mes' : ''}`
+					},
+					{
+						property: "twitter:description",
+						content: this.$page.property.description
+					},
+					{
+						property: "twitter:image",
+						content: `https://lafirmabienesraices.co${this.$page.property.propertyImages[0].image.src}`
+					}
+				]
+			};
+    },
 };
 </script>
 
