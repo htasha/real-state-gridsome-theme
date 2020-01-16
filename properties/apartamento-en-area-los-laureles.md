@@ -4,7 +4,7 @@ kitchenFurnished: false
 wifi: false
 tv: false
 title: APARTAMENTO EN VENTA SECTOR ZUÑIGA
-address: 'Cra 45 # 23 sur 33'
+address: Zuñiga Frontera
 price: 680.000.000
 description: 'Espectacular Apartamento para la venta en el sector de Zuñiga,  Cerca
   Jumbo las Vegas, San Paulo, Mall la Frontera, Euro, Colegio la Salle, Colegio Teresiano,
