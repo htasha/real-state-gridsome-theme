@@ -22,7 +22,8 @@ bedrooms: 4
 beds: 3
 bathrooms: 4
 kitchen: 1
-outsideAmenities: []
+outsideAmenities:
+- 3 parqueaderos
 insideAmenities:
 - Piso de porcelanato
 - Cocina integral
