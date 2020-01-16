@@ -47,8 +47,7 @@ fields:
       - name: image
         type: file
         label: Fotos
-        default:
-          - "/uploads/la-firma-og.jpg"
+        default: "/uploads/la-firma-og.jpg"
         config:
           maxSize: 1
       - name: altText
