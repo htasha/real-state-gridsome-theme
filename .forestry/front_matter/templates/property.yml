@@ -2,116 +2,118 @@
 label: Property
 hide_body: true
 fields:
-- name: title
-  type: text
-  config:
-    required: true
-    max: '40'
-  label: Título
-  description: p.ej. Apartamento en sector Laureles
-- name: address
-  type: text
-  config:
-    required: true
-    max: '30'
-  label: Dirección
-  description: Dirección de la propiedad
-- name: price
-  type: text
-  label: Precio
-  description: Precio de renta o de venta
-  config:
-    required: true
-- name: description
-  type: textarea
-  label: Descripción
-  description: Ingresa una pequeña descripción de la propiedad
-  config:
-    required: true
-    wysiwyg: false
-- name: leasing
-  type: select
-  default: Venta
-  config:
-    source:
-      type: custom
-    required: true
-    options:
-    - Venta
-    - Renta
-  label: Tipo de arrendamiento
-- name: propertyImages
-  type: field_group_list
-  label: Fotos de la propiedad
-  fields:
-  - name: image
-    type: image_gallery
-    label: Galeria de fotos
-    default:
-    - "/uploads/la-firma-og.jpg"
-  - name: altText
+  - name: title
     type: text
-    label: Texto alternativo
-    description: Texto corto acerca de lo que representa la imagen
     config:
       required: true
-  config:
-    labelField: altText
-- name: area
-  type: text
-  label: Área
-  description: Área construida de la propiedad
-  config:
-    required: true
-- name: stratum
-  type: number
-  label: Estrato
-  description: Estrato de la propiedad
-  config:
-    required: true
-- name: bedrooms
-  type: number
-  label: Habitaciones
-  config:
-    required: true
-- name: beds
-  type: number
-  label: Camas
-  config:
-    required: true
-- name: bathrooms
-  type: number
-  label: Baños
-  config:
-    required: true
-- name: kitchen
-  type: number
-  label: Cocinas
-  description: Número de cocinas de la propiedad
-  config:
-    required: true
-- name: kitchenFurnished
-  type: boolean
-  label: Cocina amoblada
-  description: Indica si la cocina(s) está(n) amoblada(s)
-  default: true
-- name: wifi
-  type: boolean
-  label: WiFi
-  description: Indica si la propiedad cuenta con WiFi
-  default: true
-- name: tv
-  type: boolean
-  label: TV
-  description: Indica si la propiedad cuenta con televisión
-  default: true
-- name: outsideAmenities
-  type: tag_list
-  label: Comodidades exteriores
-  description: p.ej. Asensores. Presiona enter para agregar más
-- name: insideAmenities
-  type: tag_list
-  label: Comodidades interiores
-  description: p.ej. Closets. Presiona enter para agregar más
+      max: "40"
+    label: Título
+    description: p.ej. Apartamento en sector Laureles
+  - name: address
+    type: text
+    config:
+      required: true
+      max: "30"
+    label: Dirección
+    description: Dirección de la propiedad
+  - name: price
+    type: text
+    label: Precio
+    description: Precio de renta o de venta
+    config:
+      required: true
+  - name: description
+    type: textarea
+    label: Descripción
+    description: Ingresa una pequeña descripción de la propiedad
+    config:
+      required: true
+      wysiwyg: false
+  - name: leasing
+    type: select
+    default: Venta
+    config:
+      source:
+        type: custom
+      required: true
+      options:
+        - Venta
+        - Renta
+    label: Tipo de arrendamiento
+  - name: propertyImages
+    type: field_group_list
+    label: Fotos de la propiedad
+    fields:
+      - name: image
+        type: file
+        label: Fotos
+        default:
+          - "/uploads/la-firma-og.jpg"
+        config:
+          maxSize: 1
+      - name: altText
+        type: text
+        label: Texto alternativo
+        description: Texto corto acerca de lo que representa la imagen
+        config:
+          required: true
+    config:
+      labelField: altText
+  - name: area
+    type: text
+    label: Área
+    description: Área construida de la propiedad
+    config:
+      required: true
+  - name: stratum
+    type: number
+    label: Estrato
+    description: Estrato de la propiedad
+    config:
+      required: true
+  - name: bedrooms
+    type: number
+    label: Habitaciones
+    config:
+      required: true
+  - name: beds
+    type: number
+    label: Camas
+    config:
+      required: true
+  - name: bathrooms
+    type: number
+    label: Baños
+    config:
+      required: true
+  - name: kitchen
+    type: number
+    label: Cocinas
+    description: Número de cocinas de la propiedad
+    config:
+      required: true
+  - name: kitchenFurnished
+    type: boolean
+    label: Cocina amoblada
+    description: Indica si la cocina(s) está(n) amoblada(s)
+    default: true
+  - name: wifi
+    type: boolean
+    label: WiFi
+    description: Indica si la propiedad cuenta con WiFi
+    default: true
+  - name: tv
+    type: boolean
+    label: TV
+    description: Indica si la propiedad cuenta con televisión
+    default: true
+  - name: outsideAmenities
+    type: tag_list
+    label: Comodidades exteriores
+    description: p.ej. Asensores. Presiona enter para agregar más
+  - name: insideAmenities
+    type: tag_list
+    label: Comodidades interiores
+    description: p.ej. Closets. Presiona enter para agregar más
 pages:
-- properties/apto-molinos-de-zuñiga.md
+  - properties/apto-molinos-de-zuñiga.md
