@@ -97,7 +97,7 @@
       <section class="border-top py-4">
         <b-container>
           <h6 class="font-weight-light text-gray-light">
-            Fake Str. Lousiana, Montain View, Medellin, Colombia
+            Medellin, Colombia
           </h6>
           <p class="h6 font-weight-light mb-0 text-gray-light">
             &copy; 2020 - La Firma Bienes Raices
