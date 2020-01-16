@@ -180,7 +180,7 @@
                     >
                   </div>
                 </b-card-body>
-                <b-form name="contact" method="POST" action="/gracias" netlify>
+                <b-form name="contact" method="POST" netlify>
                   <b-card-body class="pt-4 pb-1 px-4">
                     <b-form-group>
                       <b-form-input
