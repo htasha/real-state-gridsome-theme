@@ -21,7 +21,7 @@ propertyImages:
   altText: Sala
 - image: "/uploads/WhatsApp Image 2020-01-14 at 3.23.24 PM.jpeg"
   altText: Zona Humeda
-area: O
+area: "146.92"
 stratum: 5
 bedrooms: 3
 beds: 0
@@ -30,7 +30,19 @@ kitchen: 1
 outsideAmenities:
 - Asensores
 - 3 parqueaderos
+- Sauna
+- Gimnasio
+- Jacuzzi
+- Salon social
+- Terrsza
+- vigilacia 24 horas
 insideAmenities:
 - Balcón grande
+- Cuarto Util
+- Cuarto servicio
+- Estudio
+- Habitacion Principal con Vestier
+- Cocina Integral
+- Sala Amplia
 
 ---
