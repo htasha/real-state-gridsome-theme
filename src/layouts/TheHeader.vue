@@ -6,20 +6,17 @@
       variant="white"
       class="border-bottom shadow-sm border-0"
     >
-      <b-navbar-brand to="/">Logo</b-navbar-brand>
+      <g-link to="/">
+        <g-image src="@/assets/images/logo.png" quality="100" width="220" />
+      </g-link>
       <b-navbar-toggle target="nav-collapse" class="border-0"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
-          <!-- <b-nav-item>Apartamentos</b-nav-item>
-          <b-nav-item>Servicios</b-nav-item>
-          <b-nav-item>Contacto</b-nav-item> -->
-        </b-navbar-nav>
         <b-navbar-nav class="ml-auto">
           <b-dropdown-divider></b-dropdown-divider>
           <b-nav-text class="align-self-start">
             <b-button
               variant="primary"
-              href="tel:18005551234"
+              href="tel:3103844044"
               class="text-white d-flex align-items-center"
             >
               <font-awesome
@@ -28,7 +25,7 @@
                 size="sm"
                 class="mr-2"
               ></font-awesome
-              >1-800-555-1234
+              >310 3844 044
             </b-button>
           </b-nav-text>
         </b-navbar-nav>

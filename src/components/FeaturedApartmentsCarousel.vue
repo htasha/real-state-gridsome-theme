@@ -14,7 +14,7 @@
             quality="100"
             class="carousel__image w-100 h-100"
             :alt="propertyImages[0].altText"
-          ></g-image>
+          />
         </g-link>
       </template>
       <div class="d-flex justify-content-end text-left">

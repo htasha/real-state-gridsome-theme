@@ -36,6 +36,9 @@
               class="card-img"
               :src="propertyImages[0].image"
               :alt="propertyImages[0].altText"
+              width="350"
+              height="200"
+              quality="90"
               style="height: 200px"
             />
           </g-link>

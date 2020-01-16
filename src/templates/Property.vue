@@ -6,6 +6,7 @@
         :src="$page.property.propertyImages[0].image"
         :alt="$page.property.propertyImages[0].altText"
         class="w-100 hero__img"
+        quality="100"
       />
       <div class="property__gradient">
         <b-container class="property__title">
@@ -179,7 +180,7 @@
                     >
                   </div>
                 </b-card-body>
-                <b-form @submit.prevent>
+                <b-form name="contact" method="POST" action="/gracias" netlify>
                   <b-card-body class="pt-4 pb-1 px-4">
                     <b-form-group>
                       <b-form-input
@@ -188,6 +189,7 @@
                         required
                         aria-label="Ingresa tu nombre"
                         class="py-4"
+                        name="nombre"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group
@@ -199,6 +201,7 @@
                         required
                         aria-label="Ingresa tu correo"
                         class="py-4"
+                        name="correo"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group>
@@ -208,6 +211,7 @@
                         required
                         aria-label="Ingresa tu número telefónico"
                         class="py-4"
+                        name="telefono"
                       ></b-form-input>
                     </b-form-group>
                     <b-form-group>
@@ -219,6 +223,7 @@
                         required
                         value="Estoy interesad@ en la propiedad y quería reservar una cita"
                         :no-resize="true"
+                        name="mensaje"
                       ></b-form-textarea>
                     </b-form-group>
                   </b-card-body>
@@ -238,50 +243,51 @@
             </section>
             <section class="mt-5 property__agent">
               <b-media
-                class="shadow-sm rounded-lg p-3 property__card mx-auto ml-md-0 flex-column align-items-center flex-md-row"
+                class="shadow-sm rounded-lg p-3 property__card mx-auto ml-md-0 "
               >
-                <template #aside class="m-0">
+                <template #aside>
                   <g-image
-                    src="~/assets/images/agente-inmobiliario-210w.jpg"
-                    width="100"
-                    height="100"
+                    src="~/assets/images/andrea-cardenas.jpg"
+                    alt="Andrea Cárdenas"
+                    width="80"
+                    height="80"
                     quality="100"
-                    class="rounded-circle ml-3 ml-md-0 mr-md-3"
+                    class="rounded-circle"
                   />
                 </template>
-                <div class="text-center text-md-left mt-4 mt-md-0">
-                  <h5 class="font-weight-normal">Adriana García</h5>
-                  <div class="text-primary">Agente inmobiliario</div>
-                  <div class="mt-1">
-                    <b-link
-                      class="text-decoration-none text-gray-light font-weight-normal"
-                      aria-label="Enviar correo"
-                    >
-                      <span class="pr-1">
-                        <font-awesome
-                          icon="envelope"
-                          class="text--small"
-                        ></font-awesome>
-                      </span>
-                      construsueños@gmail.com
-                    </b-link>
-                  </div>
-                  <div class="mt-1">
-                    <b-link
-                      aria-label="Chat en WhatsApp"
-                      target="__blank"
-                      class="text-gray-light text-decoration-none"
-                      href="https://wa.me/123123123"
-                    >
-                      <span class="pr-1">
-                        <font-awesome
-                          :icon="['fab', 'whatsapp']"
-                          class="text--small"
-                        ></font-awesome>
-                      </span>
-                      310 (123) 3409
-                    </b-link>
-                  </div>
+                <h5 class="font-weight-normal">Andrea Cárdenas</h5>
+                <div class="text-primary">Agente de bienes raices</div>
+                <div class="mt-1">
+                  <b-link
+                    class="text-decoration-none text-gray-light font-weight-normal"
+                    aria-label="Enviar correo"
+                    href="mailto:lafirma.bienesraices@gmail.com"
+                    target="__self"
+                  >
+                    <span class="pr-1">
+                      <font-awesome
+                        icon="envelope"
+                        class="text--small"
+                      ></font-awesome>
+                    </span>
+                    lafirma.bienesraices@gmail.com
+                  </b-link>
+                </div>
+                <div class="mt-1">
+                  <b-link
+                    aria-label="Chat en WhatsApp"
+                    target="__blank"
+                    class="text-gray-light text-decoration-none"
+                    href="https://wa.me/573103844044"
+                  >
+                    <span class="pr-1">
+                      <font-awesome
+                        :icon="['fab', 'whatsapp']"
+                        class="text--small"
+                      ></font-awesome>
+                    </span>
+                    310 3844 044
+                  </b-link>
                 </div>
               </b-media>
             </section>

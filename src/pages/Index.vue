@@ -5,7 +5,6 @@
       :featured-properties="$page.allProperty.edges"
     ></featured-apartments-carousel>
     <properties-feature-cards></properties-feature-cards>
-    <our-partners></our-partners>
     <properties-grid-layout
       :all-properties="$page.allProperty.edges"
       :page-info="$page.allProperty.pageInfo"
