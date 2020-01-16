@@ -5,10 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Construsueños",
-  siteDescription: "siteDescription",
-  siteUrl: "siteUrl",
-  titleTemplate: "Construsueños · %s",
+  siteName: "La Firma Bienes Raices",
+  siteUrl: "https://lafirmabienesraices.co",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
