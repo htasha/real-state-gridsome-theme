@@ -3,7 +3,7 @@ leasing: Venta
 kitchenFurnished: false
 wifi: false
 tv: false
-title: APARTAMENTO EN VENTA SECTOR ZUÑIGA
+title: Apartamento en venta sector Zuñiga
 address: Zuñiga Frontera
 price: 680.000.000
 description: 'Espectacular Apartamento para la venta en el sector de Zuñiga,  Cerca
