@@ -5,7 +5,7 @@ wifi: false
 tv: false
 title: Apartamento en venta sector Zuñiga
 address: Zuñiga Frontera
-price: 680.000.000
+price: 670.000.000
 description: 'Espectacular Apartamento para la venta en el sector de Zuñiga,  Cerca
   Jumbo las Vegas, San Paulo, Mall la Frontera, Euro, Colegio la Salle, Colegio Teresiano,
   Avenida el Poblado y las vegas a pocas cuadras, ruta de transporte concurridas ,
