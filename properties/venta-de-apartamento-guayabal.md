@@ -11,6 +11,8 @@ description: Venta de Apartamento en Guayabal, Acogedor  muy Iluminado con lindo
   con vigilancia privada, Piscina, Ascensor, Parqueadero común, transporte publico
   cercano y cerca de las estaciones Aguacatala y Ayura, Cerca a la avenida Guayabal
 propertyImages:
+- image: "/uploads/WhatsApp Image 2020-01-12 at 2.44.20 PM.jpeg"
+  altText: Piscina
 - image: "/uploads/WhatsApp Image 2020-01-12 at 2.44.20 PM (1).jpeg"
   altText: Zona Verde
 - image: "/uploads/WhatsApp Image 2020-01-12 at 2.44.20 PM (3).jpeg"
@@ -25,8 +27,6 @@ propertyImages:
   altText: 'Sala  '
 - image: "/uploads/WhatsApp Image 2020-01-12 at 2.44.19 PM.jpeg"
   altText: Cocina
-- image: "/uploads/WhatsApp Image 2020-01-12 at 2.44.20 PM.jpeg"
-  altText: Piscina
 - image: "/uploads/WhatsApp Image 2020-01-12 at 2.44.19 PM (4).jpeg"
   altText: Closet
 - image: "/uploads/WhatsApp Image 2020-01-10 at 11.35.50 AM (1).jpeg"
