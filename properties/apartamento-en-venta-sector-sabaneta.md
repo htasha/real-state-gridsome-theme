@@ -10,6 +10,10 @@ description: |-
   Descripción
   Hermoso Apartamento con ubicacion privilegiada, acabados de lujo, iluminado, acogedores espacios, rodeado de naturaleza, zona muy tranquila, excelente transporte publico, ideal para, unidad completa.
 propertyImages:
+- image: "/uploads/WhatsApp Image 2020-01-23 at 5.33.20 PM (3).jpeg"
+  altText: Cocina
+- image: "/uploads/WhatsApp Image 2020-01-23 at 5.33.20 PM.jpeg"
+  altText: Habitación Principal
 - image: "/uploads/WhatsApp Image 2020-01-23 at 5.33.21 PM (1).jpeg"
   altText: Cocina
 - image: "/uploads/WhatsApp Image 2020-01-23 at 5.33.20 PM (2).jpeg"
