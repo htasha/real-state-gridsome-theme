@@ -10,6 +10,8 @@ description: |-
   Descripción
   Hermoso Apartamento con ubicacion privilegiada, acabados de lujo, iluminado, acogedores espacios, rodeado de naturaleza, zona muy tranquila, excelente transporte publico, ideal para, unidad completa.
 propertyImages:
+- image: "/uploads/WhatsApp Image 2020-01-23 at 5.33.20 PM (1).jpeg"
+  altText: Baño Social
 - image: "/uploads/WhatsApp Image 2020-01-23 at 5.33.21 PM.jpeg"
   altText: Estudio
 area: 55Mtr2
