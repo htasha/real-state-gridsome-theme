@@ -13,8 +13,6 @@ description: Venta de Apartamento en Guayabal, Acogedor  muy Iluminado con lindo
 propertyImages:
 - image: "/uploads/WhatsApp Image 2020-01-12 at 2.44.20 PM.jpeg"
   altText: Zona Humeda
-- image: ''
-  altText: Piscina
 - image: "/uploads/WhatsApp Image 2020-01-12 at 2.44.20 PM (1).jpeg"
   altText: Zona Verde
 - image: "/uploads/WhatsApp Image 2020-01-12 at 2.44.20 PM (3).jpeg"
