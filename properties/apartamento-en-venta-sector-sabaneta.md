@@ -28,7 +28,9 @@ bedrooms: 2
 beds: 0
 bathrooms: 2
 kitchen: 0
-outsideAmenities: []
+outsideAmenities:
+- Asensor
+- zona humeda
 insideAmenities: []
 
 ---
